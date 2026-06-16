@@ -10,6 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.example.workingbuddy.model.WorkEntry
+import com.example.workingbuddy.util.DateUtils
 import com.example.workingbuddy.viewmodel.WorkViewModel
 
 @Composable
@@ -47,8 +48,8 @@ fun OverallSummary(entries: List<WorkEntry>) {
             SummaryItem("Top Service", topService, Modifier.weight(1f))
         }
         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            SummaryItem("Total Earned", "₹$totalEarned", Modifier.weight(1f), Color(0xFF4CAF50))
-            SummaryItem("Total Pending", "₹$totalPending", Modifier.weight(1f), Color(0xFFF44336))
+            SummaryItem("Total Earned", DateUtils.formatCurrency(totalEarned), Modifier.weight(1f), Color(0xFF4CAF50))
+            SummaryItem("Total Pending", DateUtils.formatCurrency(totalPending), Modifier.weight(1f), Color(0xFFF44336))
         }
     }
 }
@@ -79,8 +80,8 @@ fun EarningsBarChart(entries: List<WorkEntry>) {
             }
         }
         Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
-            Text("Paid: ₹$paid", color = Color(0xFF4CAF50), style = MaterialTheme.typography.labelSmall)
-            Text("Pending: ₹$pending", color = Color(0xFFF44336), style = MaterialTheme.typography.labelSmall)
+            Text("Paid: " + DateUtils.formatCurrency(paid.toDouble()), color = Color(0xFF4CAF50), style = MaterialTheme.typography.labelSmall)
+            Text("Pending: " + DateUtils.formatCurrency(pending.toDouble()), color = Color(0xFFF44336), style = MaterialTheme.typography.labelSmall)
         }
     }
 }
@@ -95,7 +96,7 @@ fun ServiceBreakdown(entries: List<WorkEntry>) {
             Column(modifier = Modifier.padding(vertical = 4.dp)) {
                 Text("$service ($count)", style = MaterialTheme.typography.labelMedium)
                 LinearProgressIndicator(
-                    progress = { count / total },
+                    progress = count / total,
                     modifier = Modifier.fillMaxWidth().height(8.dp),
                 )
             }

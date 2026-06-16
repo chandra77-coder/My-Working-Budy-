@@ -1,0 +1,14 @@
+/home/ubuntu/My-Working-Budy-/app/src/main/java/com/example/workingbuddy/data/AppDatabase.kt
+/home/ubuntu/My-Working-Budy-/app/src/main/java/com/example/workingbuddy/util/DateUtils.kt
+/home/ubuntu/My-Working-Budy-/app/src/main/java/com/example/workingbuddy/data/PreferencesManager.kt
+/home/ubuntu/My-Working-Budy-/app/src/main/java/com/example/workingbuddy/model/WorkEntry.kt
+/home/ubuntu/My-Working-Budy-/app/src/main/java/com/example/workingbuddy/ui/Theme.kt
+/home/ubuntu/My-Working-Budy-/app/src/main/java/com/example/workingbuddy/ui/TodayScreen.kt
+/home/ubuntu/My-Working-Budy-/app/src/main/java/com/example/workingbuddy/ui/CalculatorDialog.kt
+/home/ubuntu/My-Working-Budy-/app/src/main/java/com/example/workingbuddy/viewmodel/WorkViewModel.kt
+/home/ubuntu/My-Working-Budy-/app/src/main/java/com/example/workingbuddy/ui/SettingsScreen.kt
+/home/ubuntu/My-Working-Budy-/app/src/main/java/com/example/workingbuddy/ui/RecordsScreen.kt
+/home/ubuntu/My-Working-Budy-/app/src/main/java/com/example/workingbuddy/data/WorkRepository.kt
+/home/ubuntu/My-Working-Budy-/app/src/main/java/com/example/workingbuddy/data/WorkEntryDao.kt
+/home/ubuntu/My-Working-Budy-/app/src/main/java/com/example/workingbuddy/MainActivity.kt
+/home/ubuntu/My-Working-Budy-/app/src/main/java/com/example/workingbuddy/ui/ChartsScreen.kt

@@ -10,6 +10,7 @@ import androidx.compose.ui.unit.dp
 import com.example.workingbuddy.util.DateUtils
 import com.example.workingbuddy.viewmodel.WorkViewModel
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun RecordsScreen(viewModel: WorkViewModel) {
     val entries by viewModel.allEntries.collectAsState()

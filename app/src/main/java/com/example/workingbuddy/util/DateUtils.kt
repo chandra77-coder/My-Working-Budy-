@@ -31,4 +31,8 @@ object DateUtils {
         cal.set(Calendar.MILLISECOND, 0)
         return cal.timeInMillis
     }
+
+    fun formatCurrency(amount: Double): String {
+        return String.format("₹%.2f", amount)
+    }
 }

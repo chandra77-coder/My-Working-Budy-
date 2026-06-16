@@ -66,13 +66,13 @@ fun SummaryCards(entries: List<WorkEntry>) {
         Card(modifier = Modifier.weight(1f)) {
             Column(modifier = Modifier.padding(16.dp)) {
                 Text("Earned", style = MaterialTheme.typography.labelMedium)
-                Text("₹$totalEarned", style = MaterialTheme.typography.titleLarge)
+                Text(DateUtils.formatCurrency(totalEarned), style = MaterialTheme.typography.titleLarge)
             }
         }
         Card(modifier = Modifier.weight(1f)) {
             Column(modifier = Modifier.padding(16.dp)) {
                 Text("Pending", style = MaterialTheme.typography.labelMedium)
-                Text("₹$totalPending", style = MaterialTheme.typography.titleLarge)
+                Text(DateUtils.formatCurrency(totalPending), style = MaterialTheme.typography.titleLarge)
             }
         }
     }
@@ -88,7 +88,7 @@ fun WorkEntryItem(entry: WorkEntry, onTogglePaid: (WorkEntry) -> Unit) {
                 if (!entry.customerName.isNullOrEmpty()) {
                     Text("Customer: ${entry.customerName}", style = MaterialTheme.typography.bodyMedium)
                 }
-                Text("₹${entry.amount}", style = MaterialTheme.typography.bodyLarge)
+                Text(DateUtils.formatCurrency(entry.amount), style = MaterialTheme.typography.bodyLarge)
             }
             Column {
                 Switch(
