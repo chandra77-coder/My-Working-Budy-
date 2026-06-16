@@ -63,18 +63,31 @@ fun TodayScreen(viewModel: WorkViewModel) {
 fun SummaryCards(entries: List<WorkEntry>) {
     val totalEarned = entries.filter { it.isPaid }.sumOf { it.amount }
     val totalPending = entries.filter { !it.isPaid }.sumOf { it.amount }
+    val entryCount = entries.size
     
-    Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-        Card(modifier = Modifier.weight(1f)) {
-            Column(modifier = Modifier.padding(16.dp)) {
-                Text("Earned", style = MaterialTheme.typography.labelMedium)
-                Text(DateUtils.formatCurrency(totalEarned), style = MaterialTheme.typography.titleLarge)
+    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            Card(modifier = Modifier.weight(1f)) {
+                Column(modifier = Modifier.padding(16.dp)) {
+                    Text("Earned", style = MaterialTheme.typography.labelMedium)
+                    Text(DateUtils.formatCurrency(totalEarned), style = MaterialTheme.typography.titleLarge)
+                }
+            }
+            Card(modifier = Modifier.weight(1f)) {
+                Column(modifier = Modifier.padding(16.dp)) {
+                    Text("Pending", style = MaterialTheme.typography.labelMedium)
+                    Text(DateUtils.formatCurrency(totalPending), style = MaterialTheme.typography.titleLarge)
+                }
             }
         }
-        Card(modifier = Modifier.weight(1f)) {
-            Column(modifier = Modifier.padding(16.dp)) {
-                Text("Pending", style = MaterialTheme.typography.labelMedium)
-                Text(DateUtils.formatCurrency(totalPending), style = MaterialTheme.typography.titleLarge)
+        Card(modifier = Modifier.fillMaxWidth()) {
+            Row(
+                modifier = Modifier.padding(16.dp).fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = androidx.compose.ui.Alignment.CenterVertically
+            ) {
+                Text("Total Entries", style = MaterialTheme.typography.labelMedium)
+                Text(entryCount.toString(), style = MaterialTheme.typography.titleLarge)
             }
         }
     }

@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
+// No AutoMirrored icon
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
@@ -45,9 +46,9 @@ fun MainScreen(viewModel: WorkViewModel) {
                 val currentRoute = navBackStackEntry?.destination?.route
 
                 val items = listOf(
-                    Triple("today", "Today", Icons.Default.Today),
-                    Triple("records", "Records", Icons.Default.List),
-                    Triple("charts", "Charts", Icons.Default.BarChart),
+                    Triple("today", "Home", Icons.Default.Home),
+                    Triple("records", "History", Icons.Default.History),
+                    Triple("charts", "Summary", Icons.Default.BarChart),
                     Triple("settings", "Settings", Icons.Default.Settings)
                 )
 
