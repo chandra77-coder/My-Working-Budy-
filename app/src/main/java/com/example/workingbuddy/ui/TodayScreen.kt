@@ -7,7 +7,9 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import com.example.workingbuddy.model.WorkEntry
 import com.example.workingbuddy.util.DateUtils
@@ -129,7 +131,12 @@ fun AddEntryDialog(onDismiss: () -> Unit, onAdd: (String, String, String, String
                         OutlinedTextField(value = customName, onValueChange = { customName = it }, label = { Text("Service Name") })
                     }
                     OutlinedTextField(value = customerName, onValueChange = { customerName = it }, label = { Text("Customer Name (Optional)") })
-                    OutlinedTextField(value = amount, onValueChange = { amount = it }, label = { Text("Amount") })
+                    OutlinedTextField(
+                        value = amount,
+                        onValueChange = { if (it.isEmpty() || it.toDoubleOrNull() != null) amount = it },
+                        label = { Text("Amount") },
+                        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal)
+                    )
                     OutlinedTextField(value = notes, onValueChange = { notes = it }, label = { Text("Notes (Optional)") })
                     Row(verticalAlignment = androidx.compose.ui.Alignment.CenterVertically) {
                         Checkbox(checked = isPaid, onCheckedChange = { isPaid = it })
@@ -139,7 +146,10 @@ fun AddEntryDialog(onDismiss: () -> Unit, onAdd: (String, String, String, String
             }
         },
         confirmButton = {
-            Button(onClick = { onAdd(serviceType, customName, customerName, notes, amount, isPaid) }) {
+            Button(
+                onClick = { onAdd(serviceType, customName, customerName, notes, amount, isPaid) },
+                enabled = amount.isNotEmpty() && (serviceType != "Other" || customName.isNotEmpty())
+            ) {
                 Text("Add")
             }
         },
