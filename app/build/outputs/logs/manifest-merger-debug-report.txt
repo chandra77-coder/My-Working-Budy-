@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:2:1-23:12
-INJECTED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:2:1-23:12
+ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:2:1-25:12
 MERGED from [androidx.navigation:navigation-common:2.6.0] /home/ubuntu/.gradle/caches/transforms-3/0efe24f967bb32076fc999e9ff03e131/transformed/navigation-common-2.6.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.6.0] /home/ubuntu/.gradle/caches/transforms-3/e440f5e58145b2b665dd4c8fefd7d0e8/transformed/navigation-runtime-2.6.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.6.0] /home/ubuntu/.gradle/caches/transforms-3/3efac9f440d2d170e753f6aed4489ebd/transformed/navigation-common-ktx-2.6.0/AndroidManifest.xml:17:1-22:12
@@ -82,8 +82,8 @@ ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:5:5-10
 	android:name
 		ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:5:22-78
 application
-ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:7:5-21:19
-INJECTED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:7:5-21:19
+ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:7:5-23:19
+INJECTED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:7:5-23:19
 MERGED from [androidx.compose.ui:ui-tooling:1.4.3] /home/ubuntu/.gradle/caches/transforms-3/5a731079f5dd550632468467a593926e/transformed/jetified-ui-tooling-1.4.3/AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-tooling:1.4.3] /home/ubuntu/.gradle/caches/transforms-3/5a731079f5dd550632468467a593926e/transformed/jetified-ui-tooling-1.4.3/AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.compose.ui:ui-test-manifest:1.4.3] /home/ubuntu/.gradle/caches/transforms-3/69b8cc830bf572753b2d580271afbfe7/transformed/jetified-ui-test-manifest-1.4.3/AndroidManifest.xml:22:5-26:19
@@ -107,31 +107,35 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /home/ubuntu/.gradle/caches
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.10.1] /home/ubuntu/.gradle/caches/transforms-3/47fe7265fdfd3caf6a14e40c728052a7/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:12:9-35
 	android:label
 		ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:9:9-41
+	android:roundIcon
+		ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:11:9-54
+	android:icon
+		ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:10:9-43
 	android:allowBackup
 		ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:11:9-50
+		ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:13:9-50
 activity#com.example.workingbuddy.MainActivity
-ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:12:9-20:20
+ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:14:9-22:20
 	android:exported
-		ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:14:13-36
+		ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:16:13-36
 	android:theme
-		ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:15:13-54
+		ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:17:13-54
 	android:name
-		ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:13:13-41
+		ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:15:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:16:13-19:29
+ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:18:13-21:29
 action#android.intent.action.MAIN
-ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:17:17-69
+ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:17:25-66
+		ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:19:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:18:17-77
+ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:18:27-74
+		ADDED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml:20:27-74
 uses-sdk
 INJECTED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/ubuntu/My-Working-Budy-/app/src/main/AndroidManifest.xml
